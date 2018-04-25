@@ -1,6 +1,7 @@
 # Rofiemoji
 
 Inspired by https://github.com/fdw/rofimoji but written as rofi-script instead of starting a separate rofi.
+It also automatically downloads the list of emojis when used for the first time. You can also place `emoji.txt` from this repository in `$HOME/.cache/` yourself.
 
 ## Prerequisites
 
