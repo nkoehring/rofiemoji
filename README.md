@@ -2,7 +2,7 @@
 
 Inspired by https://github.com/fdw/rofimoji but written as rofi-script instead of starting a separate rofi.
 
-It automatically downloads the list of emojis when used for the first time. To avoid that, simply place `emoji.txt` from this repository in `$HOME/.cache/` yourself.
+It automatically downloads the list of emojis when used for the first time. To avoid that, simply place `emoji.txt` from this repository in `$HOME/.cache/` yourself. But don't worry too much, the download is pretty quick (~350kb text file).
 
 ## Prerequisites
 
