@@ -18,6 +18,6 @@ rofi -modi 'run,drun,emoji:/path/to/rofimoji/rofimoji.sh' -show emoji
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/nkoehring/rofiemoji/master/scrot.png)
+![screenshot](https://raw.githubusercontent.com/nkoehring/rofiemoji/master/rofiemoji.jpg)
 
 
