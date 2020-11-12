@@ -8,7 +8,7 @@ FILE="$DIR/emojis.txt"
 if [ ! -r $FILE ]
 then
   if [ ! -d $DIR ]; then mkdir $DIR; fi
-  curl --compressed $URL | grep -v '^#' | grep ' ; fully-qualified ' | cut -d'#' -f2 > $FILE
+  curl --compressed "$URL" | sed -nE 's/^.+fully-qualified\s+#\s(\S+) E[0-9.]+ / \1 /p' > "$FILE"
 fi
 
 if [ "$@" ]
