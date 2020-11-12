@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VER='11.0'
+VER='13.1'
 URL="https://www.unicode.org/Public/emoji/${VER}/emoji-test.txt"
 DIR="$HOME/.cache"
 FILE="$DIR/emojis.txt"
@@ -8,7 +8,7 @@ FILE="$DIR/emojis.txt"
 if [ ! -r $FILE ]
 then
   if [ ! -d $DIR ]; then mkdir $DIR; fi
-  curl $URL | grep -v '^#' | grep ' ; fully-qualified ' | cut -d'#' -f2 > $FILE
+  curl --compressed $URL | grep -v '^#' | grep ' ; fully-qualified ' | cut -d'#' -f2 > $FILE
 fi
 
 if [ "$@" ]
