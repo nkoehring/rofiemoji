@@ -13,7 +13,7 @@ It automatically downloads the list of emojis when used for the first time. To a
 
 ## Usage Example
 ```sh
-rofi -modi 'run,drun,emoji:/path/to/rofimoji/rofimoji.sh' -show emoji
+rofi -modi 'run,drun,emoji:/path/to/rofiemoji/rofiemoji.sh' -show emoji
 ```
 
 `Enter` copies the selected emoji into the clipboard. Requires [xsel](https://linux.die.net/man/1/xsel) to work.
